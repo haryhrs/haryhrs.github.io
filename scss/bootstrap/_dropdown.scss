@@ -7,8 +7,11 @@
 }
 
 .dropdown-toggle {
+<<<<<<< HEAD
   white-space: nowrap;
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   // Generate the caret automatically
   @include caret;
 }
@@ -24,8 +27,13 @@
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
+<<<<<<< HEAD
   @include font-size($dropdown-font-size);
   color: $dropdown-color;
+=======
+  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+  color: $body-color;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: $dropdown-bg;
@@ -35,6 +43,7 @@
   @include box-shadow($dropdown-box-shadow);
 }
 
+<<<<<<< HEAD
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -49,6 +58,11 @@
       left: auto;
     }
   }
+=======
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 // Allow for dropdowns to go bottom up (aka, dropup-menu)
@@ -101,7 +115,11 @@
 }
 
 // When enabled Popper.js, reset basic dropdown position
+<<<<<<< HEAD
 // stylelint-disable-next-line no-duplicate-selectors
+=======
+// stylelint-disable no-duplicate-selectors
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .dropdown-menu {
   &[x-placement^="top"],
   &[x-placement^="right"],
@@ -111,10 +129,18 @@
     bottom: auto;
   }
 }
+<<<<<<< HEAD
 
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
   @include nav-divider($dropdown-divider-bg, $dropdown-divider-margin-y);
+=======
+// stylelint-enable no-duplicate-selectors
+
+// Dividers (basically an `<hr>`) within the dropdown
+.dropdown-divider {
+  @include nav-divider($dropdown-divider-bg);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 // Links, buttons, and more within the dropdown menu
@@ -132,6 +158,7 @@
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
 
+<<<<<<< HEAD
   // Prevent dropdown overflow if there's no padding
   // See https://github.com/twbs/bootstrap/pull/27703
   @if $dropdown-padding-y == 0 {
@@ -144,6 +171,8 @@
     }
   }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   @include hover-focus {
     color: $dropdown-link-hover-color;
     text-decoration: none;
@@ -160,7 +189,10 @@
   &.disabled,
   &:disabled {
     color: $dropdown-link-disabled-color;
+<<<<<<< HEAD
     pointer-events: none;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     background-color: transparent;
     // Remove CSS gradients if they're enabled
     @if $enable-gradients {
@@ -178,7 +210,11 @@
   display: block;
   padding: $dropdown-padding-y $dropdown-item-padding-x;
   margin-bottom: 0; // for use with heading elements
+<<<<<<< HEAD
   @include font-size($font-size-sm);
+=======
+  font-size: $font-size-sm;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a
 }

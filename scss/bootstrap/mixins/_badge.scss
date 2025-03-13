@@ -2,6 +2,7 @@
   color: color-yiq($bg);
   background-color: $bg;
 
+<<<<<<< HEAD
   @at-root a#{&} {
     @include hover-focus {
       color: color-yiq($bg);
@@ -13,5 +14,13 @@
       outline: 0;
       box-shadow: 0 0 0 $badge-focus-width rgba($bg, .5);
     }
+=======
+  &[href] {
+    @include hover-focus {
+      color: color-yiq($bg);
+      text-decoration: none;
+      background-color: darken($bg, 10%);
+    }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 }

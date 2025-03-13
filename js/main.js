@@ -41,6 +41,7 @@
    $.Scrollax();
 
 
+<<<<<<< HEAD
 
    // Burger Menu
 	var burgerMenu = function() {
@@ -82,6 +83,53 @@
 
 	onePageClick();
 	
+=======
+   var burgerMenu = function() {
+
+		$('.js-colorlib-nav-toggle').on('click', function(event){
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');	
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');	
+			}
+		});
+	};
+	burgerMenu();
+
+	// Click outside of offcanvass
+	var mobileMenuOutsideClick = function() {
+
+		$(document).click(function (e) {
+	    var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+	    	if ( $('body').hasClass('offcanvas') ) {
+
+    			$('body').removeClass('offcanvas');
+    			$('.js-colorlib-nav-toggle').removeClass('active');
+			
+	    	}
+	    	
+	    }
+		});
+
+		$(window).scroll(function(){
+			if ( $('body').hasClass('offcanvas') ) {
+
+    			$('body').removeClass('offcanvas');
+    			$('.js-colorlib-nav-toggle').removeClass('active');
+			
+	    	}
+		});
+
+	};
+	mobileMenuOutsideClick();
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
@@ -106,6 +154,7 @@
 	      }
 	    }
 		});
+<<<<<<< HEAD
 	};
 	carousel();
 
@@ -202,6 +251,14 @@
 	counter();
 
 
+=======
+
+	};
+	carousel();
+
+	
+
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.ftco-animate').waypoint( function( direction ) {
@@ -238,6 +295,10 @@
 	};
 	contentWayPoint();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 	// magnific popup
 	$('.image-popup').magnificPopup({
     type: 'image',
@@ -270,6 +331,7 @@
   });
 
 
+<<<<<<< HEAD
   var goHere = function() {
 
 		$('.mouse-icon').on('click', function(event){
@@ -345,10 +407,13 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
 
 })(jQuery);
 
+<<<<<<< HEAD
 
 
 
@@ -440,3 +505,5 @@ $(function() {
 
 });
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd

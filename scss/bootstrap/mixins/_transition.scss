@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // stylelint-disable property-blacklist
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 @mixin transition($transition...) {
   @if $enable-transitions {
     @if length($transition) == 0 {
@@ -8,9 +11,14 @@
     }
   }
 
+<<<<<<< HEAD
   @if $enable-prefers-reduced-motion-media-query {
     @media (prefers-reduced-motion: reduce) {
       transition: none;
     }
+=======
+  @media screen and (prefers-reduced-motion: reduce) {
+    transition: none;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 }

@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 // Disable animation if transitions are disabled
 @if $enable-transitions {
   @keyframes progress-bar-stripes {
     from { background-position: $progress-height 0; }
     to { background-position: 0 0; }
   }
+=======
+@keyframes progress-bar-stripes {
+  from { background-position: $progress-height 0; }
+  to { background-position: 0 0; }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 .progress {
   display: flex;
   height: $progress-height;
   overflow: hidden; // force rounded corners by cropping it
+<<<<<<< HEAD
   @include font-size($progress-font-size);
+=======
+  font-size: $progress-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   background-color: $progress-bg;
   @include border-radius($progress-border-radius);
   @include box-shadow($progress-box-shadow);
@@ -32,6 +42,7 @@
   background-size: $progress-height $progress-height;
 }
 
+<<<<<<< HEAD
 @if $enable-transitions {
   .progress-bar-animated {
     animation: progress-bar-stripes $progress-bar-animation-timing;
@@ -40,4 +51,8 @@
       animation: none;
     }
   }
+=======
+.progress-bar-animated {
+  animation: progress-bar-stripes $progress-bar-animation-timing;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }

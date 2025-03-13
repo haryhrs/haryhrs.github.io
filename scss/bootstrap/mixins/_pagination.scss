@@ -3,7 +3,11 @@
 @mixin pagination-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
   .page-link {
     padding: $padding-y $padding-x;
+<<<<<<< HEAD
     @include font-size($font-size);
+=======
+    font-size: $font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     line-height: $line-height;
   }
 

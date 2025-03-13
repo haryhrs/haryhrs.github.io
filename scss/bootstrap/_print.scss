@@ -51,7 +51,11 @@
     }
     pre,
     blockquote {
+<<<<<<< HEAD
       border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of 1px
+=======
+      border: $border-width solid $gray-500;   // Bootstrap custom code; using `$border-width` instead of 1px
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       page-break-inside: avoid;
     }
 
@@ -112,7 +116,10 @@
         background-color: $white !important;
       }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     .table-bordered {
       th,
       td {
@@ -120,6 +127,7 @@
       }
     }
 
+<<<<<<< HEAD
     .table-dark {
       color: inherit;
 
@@ -136,6 +144,8 @@
       border-color: $table-border-color;
     }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     // Bootstrap specific changes end
   }
 }

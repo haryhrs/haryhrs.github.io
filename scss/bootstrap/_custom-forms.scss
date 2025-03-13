@@ -10,8 +10,13 @@
 .custom-control {
   position: relative;
   display: block;
+<<<<<<< HEAD
   min-height: $font-size-base * $line-height-base;
   padding-left: $custom-control-gutter + $custom-control-indicator-size;
+=======
+  min-height: (1rem * $line-height-base);
+  padding-left: $custom-control-gutter;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 .custom-control-inline {
@@ -26,13 +31,17 @@
 
   &:checked ~ .custom-control-label::before {
     color: $custom-control-indicator-checked-color;
+<<<<<<< HEAD
     border-color: $custom-control-indicator-checked-border-color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include gradient-bg($custom-control-indicator-checked-bg);
     @include box-shadow($custom-control-indicator-checked-box-shadow);
   }
 
   &:focus ~ .custom-control-label::before {
     // the mixin is not used here to make sure there is feedback
+<<<<<<< HEAD
     @if $enable-shadows {
       box-shadow: $input-box-shadow, $input-focus-box-shadow;
     } @else {
@@ -48,6 +57,14 @@
     color: $custom-control-indicator-active-color;
     background-color: $custom-control-indicator-active-bg;
     border-color: $custom-control-indicator-active-border-color;
+=======
+    box-shadow: $custom-control-indicator-focus-box-shadow;
+  }
+
+  &:active ~ .custom-control-label::before {
+    color: $custom-control-indicator-active-color;
+    background-color: $custom-control-indicator-active-bg;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include box-shadow($custom-control-indicator-active-box-shadow);
   }
 
@@ -64,38 +81,66 @@
 
 // Custom control indicators
 //
+<<<<<<< HEAD
 // Build the custom controls out of pseudo-elements.
 
 .custom-control-label {
   position: relative;
   margin-bottom: 0;
   vertical-align: top;
+=======
+// Build the custom controls out of psuedo-elements.
+
+.custom-control-label {
+  margin-bottom: 0;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
   // Background-color and (when enabled) gradient
   &::before {
     position: absolute;
+<<<<<<< HEAD
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
+=======
+    top: (($line-height-base - $custom-control-indicator-size) / 2);
+    left: 0;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     display: block;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     pointer-events: none;
     content: "";
+<<<<<<< HEAD
     background-color: $custom-control-indicator-bg;
     border: $custom-control-indicator-border-color solid $custom-control-indicator-border-width;
+=======
+    user-select: none;
+    background-color: $custom-control-indicator-bg;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include box-shadow($custom-control-indicator-box-shadow);
   }
 
   // Foreground (icon)
   &::after {
     position: absolute;
+<<<<<<< HEAD
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
+=======
+    top: (($line-height-base - $custom-control-indicator-size) / 2);
+    left: 0;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     display: block;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     content: "";
+<<<<<<< HEAD
     background: no-repeat 50% / #{$custom-control-indicator-bg-size};
+=======
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: $custom-control-indicator-bg-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 }
 
@@ -110,6 +155,12 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label {
+<<<<<<< HEAD
+=======
+    &::before {
+      @include gradient-bg($custom-control-indicator-checked-bg);
+    }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     &::after {
       background-image: $custom-checkbox-indicator-icon-checked;
     }
@@ -117,7 +168,10 @@
 
   .custom-control-input:indeterminate ~ .custom-control-label {
     &::before {
+<<<<<<< HEAD
       border-color: $custom-checkbox-indicator-indeterminate-border-color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
       @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
     }
@@ -142,11 +196,20 @@
 
 .custom-radio {
   .custom-control-label::before {
+<<<<<<< HEAD
     // stylelint-disable-next-line property-blacklist
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     border-radius: $custom-radio-indicator-border-radius;
   }
 
   .custom-control-input:checked ~ .custom-control-label {
+<<<<<<< HEAD
+=======
+    &::before {
+      @include gradient-bg($custom-control-indicator-checked-bg);
+    }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     &::after {
       background-image: $custom-radio-indicator-icon-checked;
     }
@@ -160,6 +223,7 @@
 }
 
 
+<<<<<<< HEAD
 // switches
 //
 // Tweak a few things for switches
@@ -203,6 +267,8 @@
 }
 
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 // Select
 //
 // Replaces the browser default select with a custom one, mostly pulled from
@@ -214,6 +280,7 @@
   width: 100%;
   height: $custom-select-height;
   padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+<<<<<<< HEAD
   font-family: $custom-select-font-family;
   @include font-size($custom-select-font-size);
   font-weight: $custom-select-font-weight;
@@ -225,16 +292,33 @@
   border: $custom-select-border-width solid $custom-select-border-color;
   @include border-radius($custom-select-border-radius, 0);
   @include box-shadow($custom-select-box-shadow);
+=======
+  line-height: $custom-select-line-height;
+  color: $custom-select-color;
+  vertical-align: middle;
+  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
+  background-size: $custom-select-bg-size;
+  border: $custom-select-border-width solid $custom-select-border-color;
+  @if $enable-rounded {
+    border-radius: $custom-select-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   appearance: none;
 
   &:focus {
     border-color: $custom-select-focus-border-color;
     outline: 0;
+<<<<<<< HEAD
     @if $enable-shadows {
       box-shadow: $custom-select-box-shadow, $custom-select-focus-box-shadow;
     } @else {
       box-shadow: $custom-select-focus-box-shadow;
     }
+=======
+    box-shadow: $custom-select-focus-box-shadow;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
     &::-ms-value {
       // For visual consistency with other platforms/browsers,
@@ -261,24 +345,40 @@
 
   // Hides the default caret in IE11
   &::-ms-expand {
+<<<<<<< HEAD
     display: none;
+=======
+    opacity: 0;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 }
 
 .custom-select-sm {
   height: $custom-select-height-sm;
+<<<<<<< HEAD
   padding-top: $custom-select-padding-y-sm;
   padding-bottom: $custom-select-padding-y-sm;
   padding-left: $custom-select-padding-x-sm;
   @include font-size($custom-select-font-size-sm);
+=======
+  padding-top: $custom-select-padding-y;
+  padding-bottom: $custom-select-padding-y;
+  font-size: $custom-select-font-size-sm;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 .custom-select-lg {
   height: $custom-select-height-lg;
+<<<<<<< HEAD
   padding-top: $custom-select-padding-y-lg;
   padding-bottom: $custom-select-padding-y-lg;
   padding-left: $custom-select-padding-x-lg;
   @include font-size($custom-select-font-size-lg);
+=======
+  padding-top: $custom-select-padding-y;
+  padding-bottom: $custom-select-padding-y;
+  font-size: $custom-select-font-size-lg;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 
@@ -305,10 +405,17 @@
   &:focus ~ .custom-file-label {
     border-color: $custom-file-focus-border-color;
     box-shadow: $custom-file-focus-box-shadow;
+<<<<<<< HEAD
   }
 
   &:disabled ~ .custom-file-label {
     background-color: $custom-file-disabled-bg;
+=======
+
+    &::after {
+      border-color: $custom-file-focus-border-color;
+    }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 
   @each $lang, $value in $custom-file-text {
@@ -316,10 +423,13 @@
       content: $value;
     }
   }
+<<<<<<< HEAD
 
   ~ .custom-file-label[data-browse]::after {
     content: attr(data-browse);
   }
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 .custom-file-label {
@@ -330,8 +440,11 @@
   z-index: 1;
   height: $custom-file-height;
   padding: $custom-file-padding-y $custom-file-padding-x;
+<<<<<<< HEAD
   font-family: $custom-file-font-family;
   font-weight: $custom-file-font-weight;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   line-height: $custom-file-line-height;
   color: $custom-file-color;
   background-color: $custom-file-bg;
@@ -346,38 +459,57 @@
     bottom: 0;
     z-index: 3;
     display: block;
+<<<<<<< HEAD
     height: $custom-file-height-inner;
+=======
+    height: calc(#{$custom-file-height} - #{$custom-file-border-width} * 2);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     padding: $custom-file-padding-y $custom-file-padding-x;
     line-height: $custom-file-line-height;
     color: $custom-file-button-color;
     content: "Browse";
     @include gradient-bg($custom-file-button-bg);
+<<<<<<< HEAD
     border-left: inherit;
+=======
+    border-left: $custom-file-border-width solid $custom-file-border-color;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
 }
 
 // Range
 //
+<<<<<<< HEAD
 // Style range inputs the same across browsers. Vendor-specific rules for pseudo
+=======
+// Style range inputs the same across browsers. Vendor-specific rules for psuedo
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 // elements cannot be mixed. As such, there are no shared styles for focus or
 // active states on prefixed selectors.
 
 .custom-range {
   width: 100%;
+<<<<<<< HEAD
   height: calc(#{$custom-range-thumb-height} + #{$custom-range-thumb-focus-box-shadow-width * 2});
   padding: 0; // Need to reset padding
+=======
+  padding-left: 0; // Firefox specific
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   background-color: transparent;
   appearance: none;
 
   &:focus {
     outline: none;
+<<<<<<< HEAD
 
     // Pseudo-elements must be split across multiple rulesets to have an effect.
     // No box-shadow() mixin for focus accessibility.
     &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 
   &::-moz-focus-outer {
@@ -387,14 +519,28 @@
   &::-webkit-slider-thumb {
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
+<<<<<<< HEAD
     margin-top: ($custom-range-track-height - $custom-range-thumb-height) / 2; // Webkit specific
+=======
+    margin-top: -($custom-range-thumb-width * .25); // Webkit specific?
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
     @include box-shadow($custom-range-thumb-box-shadow);
+<<<<<<< HEAD
     @include transition($custom-forms-transition);
     appearance: none;
 
+=======
+    appearance: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: $custom-range-thumb-focus-box-shadow; // No mixin for focus accessibility
+    }
+
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     &:active {
       @include gradient-bg($custom-range-thumb-active-bg);
     }
@@ -418,9 +564,19 @@
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
     @include box-shadow($custom-range-thumb-box-shadow);
+<<<<<<< HEAD
     @include transition($custom-forms-transition);
     appearance: none;
 
+=======
+    appearance: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: $custom-range-thumb-focus-box-shadow; // No mixin for focus accessibility
+    }
+
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     &:active {
       @include gradient-bg($custom-range-thumb-active-bg);
     }
@@ -440,16 +596,29 @@
   &::-ms-thumb {
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
+<<<<<<< HEAD
     margin-top: 0; // Edge specific
     margin-right: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
     margin-left: $custom-range-thumb-focus-box-shadow-width;  // Workaround that overflowed box-shadow is hidden.
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
     @include box-shadow($custom-range-thumb-box-shadow);
+<<<<<<< HEAD
     @include transition($custom-forms-transition);
     appearance: none;
 
+=======
+    appearance: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: $custom-range-thumb-focus-box-shadow; // No mixin for focus accessibility
+    }
+
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     &:active {
       @include gradient-bg($custom-range-thumb-active-bg);
     }
@@ -462,7 +631,11 @@
     cursor: $custom-range-track-cursor;
     background-color: transparent;
     border-color: transparent;
+<<<<<<< HEAD
     border-width: $custom-range-thumb-height / 2;
+=======
+    border-width: ($custom-range-thumb-height * .5);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     @include box-shadow($custom-range-track-box-shadow);
   }
 
@@ -476,6 +649,7 @@
     background-color: $custom-range-track-bg;
     @include border-radius($custom-range-track-border-radius);
   }
+<<<<<<< HEAD
 
   &:disabled {
     &::-webkit-slider-thumb {
@@ -504,4 +678,6 @@
 .custom-file-label,
 .custom-select {
   @include transition($custom-forms-transition);
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }

@@ -24,7 +24,11 @@
   padding: $navbar-padding-y $navbar-padding-x;
 
   // Because flex properties aren't inherited, we need to redeclare these first
+<<<<<<< HEAD
   // few properties so that content nested within behave properly.
+=======
+  // few properities so that content nested within behave properly.
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   > .container,
   > .container-fluid {
     display: flex;
@@ -44,7 +48,11 @@
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
+<<<<<<< HEAD
   @include font-size($navbar-brand-font-size);
+=======
+  font-size: $navbar-brand-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   line-height: inherit;
   white-space: nowrap;
 
@@ -94,7 +102,11 @@
 // Powered by the collapse Bootstrap JavaScript plugin.
 
 // When collapsed, prevent the toggleable navbar contents from appearing in
+<<<<<<< HEAD
 // the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
+=======
+// the default flexbox row orienation. Requires the use of `flex-wrap: wrap`
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 // on the `.navbar` parent.
 .navbar-collapse {
   flex-basis: 100%;
@@ -107,7 +119,11 @@
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+<<<<<<< HEAD
   @include font-size($navbar-toggler-font-size);
+=======
+  font-size: $navbar-toggler-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
@@ -116,6 +132,14 @@
   @include hover-focus {
     text-decoration: none;
   }
+<<<<<<< HEAD
+=======
+
+  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 // Keep as a separate element so folks can easily override it with another icon
@@ -170,7 +194,11 @@
         }
 
         .navbar-collapse {
+<<<<<<< HEAD
           display: flex !important; // stylelint-disable-line declaration-no-important
+=======
+          display: flex !important;  // stylelint-disable-line declaration-no-important
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
           // Changes flex-bases to auto because of an IE10 bug
           flex-basis: auto;
@@ -192,10 +220,17 @@
 // Dark links against a light background
 .navbar-light {
   .navbar-brand {
+<<<<<<< HEAD
     color: $navbar-light-brand-color;
 
     @include hover-focus {
       color: $navbar-light-brand-hover-color;
+=======
+    color: $navbar-light-active-color;
+
+    @include hover-focus {
+      color: $navbar-light-active-color;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     }
   }
 
@@ -244,10 +279,17 @@
 // White links against a dark background
 .navbar-dark {
   .navbar-brand {
+<<<<<<< HEAD
     color: $navbar-dark-brand-color;
 
     @include hover-focus {
       color: $navbar-dark-brand-hover-color;
+=======
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     }
   }
 

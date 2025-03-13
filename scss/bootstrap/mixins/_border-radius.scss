@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // stylelint-disable property-blacklist
 // Single side border-radius
 
@@ -8,6 +9,14 @@
   @else if $fallback-border-radius != false {
     border-radius: $fallback-border-radius;
   }
+=======
+// Single side border-radius
+
+@mixin border-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-radius: $radius;
+  }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 @mixin border-top-radius($radius) {
@@ -37,6 +46,7 @@
     border-bottom-left-radius: $radius;
   }
 }
+<<<<<<< HEAD
 
 @mixin border-top-left-radius($radius) {
   @if $enable-rounded {
@@ -61,3 +71,5 @@
     border-bottom-left-radius: $radius;
   }
 }
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd

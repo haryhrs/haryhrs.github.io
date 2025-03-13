@@ -26,12 +26,20 @@
 }
 
 
+<<<<<<< HEAD
 @mixin form-validation-state($state, $color, $icon) {
+=======
+@mixin form-validation-state($state, $color) {
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   .#{$state}-feedback {
     display: none;
     width: 100%;
     margin-top: $form-feedback-margin-top;
+<<<<<<< HEAD
     @include font-size($form-feedback-font-size);
+=======
+    font-size: $form-feedback-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     color: $color;
   }
 
@@ -41,6 +49,7 @@
     z-index: 5;
     display: none;
     max-width: 100%; // Contain to parent when possible
+<<<<<<< HEAD
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
     margin-top: .1rem;
     @include font-size($form-feedback-tooltip-font-size);
@@ -86,16 +95,31 @@
     }
   }
 
+=======
+    padding: .5rem;
+    margin-top: .1rem;
+    font-size: .875rem;
+    line-height: 1;
+    color: $white;
+    background-color: rgba($color, .8);
+    border-radius: .2rem;
+  }
+
+  .form-control,
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   .custom-select {
     .was-validated &:#{$state},
     &.is-#{$state} {
       border-color: $color;
 
+<<<<<<< HEAD
       @if $enable-validation-icons {
         padding-right: $custom-select-feedback-icon-padding-right;
         background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
       }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       &:focus {
         border-color: $color;
         box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
@@ -108,6 +132,7 @@
     }
   }
 
+<<<<<<< HEAD
 
   .form-control-file {
     .was-validated &:#{$state},
@@ -119,6 +144,8 @@
     }
   }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   .form-check-input {
     .was-validated &:#{$state},
     &.is-#{$state} {
@@ -140,7 +167,11 @@
         color: $color;
 
         &::before {
+<<<<<<< HEAD
           border-color: $color;
+=======
+          background-color: lighten($color, 25%);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
         }
       }
 
@@ -151,18 +182,25 @@
 
       &:checked {
         ~ .custom-control-label::before {
+<<<<<<< HEAD
           border-color: lighten($color, 10%);
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
           @include gradient-bg(lighten($color, 10%));
         }
       }
 
       &:focus {
         ~ .custom-control-label::before {
+<<<<<<< HEAD
           box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
         }
 
         &:not(:checked) ~ .custom-control-label::before {
           border-color: $color;
+=======
+          box-shadow: 0 0 0 1px $body-bg, 0 0 0 $input-focus-width rgba($color, .25);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
         }
       }
     }
@@ -174,6 +212,11 @@
     &.is-#{$state} {
       ~ .custom-file-label {
         border-color: $color;
+<<<<<<< HEAD
+=======
+
+        &::before { border-color: inherit; }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       }
 
       ~ .#{$state}-feedback,
@@ -183,7 +226,10 @@
 
       &:focus {
         ~ .custom-file-label {
+<<<<<<< HEAD
           border-color: $color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
           box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
         }
       }

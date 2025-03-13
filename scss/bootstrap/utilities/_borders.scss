@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // stylelint-disable property-blacklist, declaration-no-important
+=======
+// stylelint-disable declaration-no-important
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
 //
 // Border
@@ -30,6 +34,7 @@
 // Border-radius
 //
 
+<<<<<<< HEAD
 .rounded-sm {
   border-radius: $border-radius-sm !important;
 }
@@ -38,38 +43,58 @@
   border-radius: $border-radius !important;
 }
 
+=======
+.rounded {
+  border-radius: $border-radius !important;
+}
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .rounded-top {
   border-top-left-radius: $border-radius !important;
   border-top-right-radius: $border-radius !important;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .rounded-right {
   border-top-right-radius: $border-radius !important;
   border-bottom-right-radius: $border-radius !important;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .rounded-bottom {
   border-bottom-right-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .rounded-left {
   border-top-left-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
 
+<<<<<<< HEAD
 .rounded-lg {
   border-radius: $border-radius-lg !important;
 }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .rounded-circle {
   border-radius: 50% !important;
 }
 
+<<<<<<< HEAD
 .rounded-pill {
   border-radius: $rounded-pill !important;
 }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .rounded-0 {
   border-radius: 0 !important;
 }

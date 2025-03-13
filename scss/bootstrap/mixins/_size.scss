@@ -3,5 +3,8 @@
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
+<<<<<<< HEAD
   @include deprecate("`size()`", "v4.3.0", "v5");
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }

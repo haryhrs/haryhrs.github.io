@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 // Inline code
 code {
   @include font-size($code-font-size);
+=======
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-family-monospace;
+}
+
+// Inline code
+code {
+  font-size: $code-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   color: $code-color;
   word-break: break-word;
 
@@ -13,7 +27,11 @@ code {
 // User input typically entered via keyboard
 kbd {
   padding: $kbd-padding-y $kbd-padding-x;
+<<<<<<< HEAD
   @include font-size($kbd-font-size);
+=======
+  font-size: $kbd-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   color: $kbd-color;
   background-color: $kbd-bg;
   @include border-radius($border-radius-sm);
@@ -21,7 +39,11 @@ kbd {
 
   kbd {
     padding: 0;
+<<<<<<< HEAD
     @include font-size(100%);
+=======
+    font-size: 100%;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     font-weight: $nested-kbd-font-weight;
     @include box-shadow(none);
   }
@@ -30,12 +52,20 @@ kbd {
 // Blocks of code
 pre {
   display: block;
+<<<<<<< HEAD
   @include font-size($code-font-size);
+=======
+  font-size: $code-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   color: $pre-color;
 
   // Account for some code outputs that place code tags in pre tags
   code {
+<<<<<<< HEAD
     @include font-size(inherit);
+=======
+    font-size: inherit;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     color: inherit;
     word-break: normal;
   }

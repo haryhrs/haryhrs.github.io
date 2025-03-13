@@ -6,11 +6,17 @@
   #{$parent} {
     color: $color !important;
   }
+<<<<<<< HEAD
   @if $emphasized-link-hover-darken-percentage != 0 {
     a#{$parent} {
       @include hover-focus {
         color: darken($color, $emphasized-link-hover-darken-percentage) !important;
       }
+=======
+  a#{$parent} {
+    @include hover-focus {
+      color: darken($color, 10%) !important;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     }
   }
 }

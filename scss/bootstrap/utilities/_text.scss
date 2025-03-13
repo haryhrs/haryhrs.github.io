@@ -4,12 +4,19 @@
 // Text
 //
 
+<<<<<<< HEAD
 .text-monospace { font-family: $font-family-monospace !important; }
+=======
+.text-monospace { font-family: $font-family-monospace; }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
 // Alignment
 
 .text-justify  { text-align: justify !important; }
+<<<<<<< HEAD
 .text-wrap     { white-space: normal !important; }
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 .text-nowrap   { white-space: nowrap !important; }
 .text-truncate { @include text-truncate; }
 
@@ -33,12 +40,19 @@
 
 // Weight and italics
 
+<<<<<<< HEAD
 .font-weight-light   { font-weight: $font-weight-light !important; }
 .font-weight-lighter { font-weight: $font-weight-lighter !important; }
 .font-weight-normal  { font-weight: $font-weight-normal !important; }
 .font-weight-bold    { font-weight: $font-weight-bold !important; }
 .font-weight-bolder  { font-weight: $font-weight-bolder !important; }
 .font-italic         { font-style: italic !important; }
+=======
+.font-weight-light  { font-weight: $font-weight-light !important; }
+.font-weight-normal { font-weight: $font-weight-normal !important; }
+.font-weight-bold   { font-weight: $font-weight-bold !important; }
+.font-italic        { font-style: italic !important; }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
 // Contextual colors
 
@@ -57,6 +71,7 @@
 // Misc
 
 .text-hide {
+<<<<<<< HEAD
   @include text-hide($ignore-warning: true);
 }
 
@@ -70,3 +85,7 @@
 // Reset
 
 .text-reset { color: inherit !important; }
+=======
+  @include text-hide();
+}
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd

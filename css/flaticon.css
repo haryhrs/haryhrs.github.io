@@ -1,6 +1,10 @@
 	/*
   	Flaticon icon font: Flaticon
+<<<<<<< HEAD
   	Creation date: 04/01/2019 13:45
+=======
+  	Creation date: 12/08/2018 13:24
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   	*/
 
 
@@ -36,6 +40,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 .flaticon-ideas:before { content: "\f100"; }
 .flaticon-flasks:before { content: "\f101"; }
 .flaticon-analysis:before { content: "\f102"; }
@@ -43,3 +48,12 @@
 .flaticon-web-design:before { content: "\f104"; }
 .flaticon-idea:before { content: "\f105"; }
 .flaticon-innovation:before { content: "\f106"; }
+=======
+.flaticon-car:before { content: "\f100"; }
+.flaticon-resort:before { content: "\f101"; }
+.flaticon-yatch:before { content: "\f102"; }
+.flaticon-map-of-roads:before { content: "\f103"; }
+.flaticon-compass:before { content: "\f104"; }
+.flaticon-around:before { content: "\f105"; }
+.flaticon-sailboat:before { content: "\f106"; }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd

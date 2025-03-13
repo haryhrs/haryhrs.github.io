@@ -6,7 +6,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+=======
+  min-width: 0;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
@@ -36,7 +40,10 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+<<<<<<< HEAD
   color: $card-color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 .card-title {
@@ -44,7 +51,11 @@
 }
 
 .card-subtitle {
+<<<<<<< HEAD
   margin-top: -$card-spacer-y / 2;
+=======
+  margin-top: -($card-spacer-y / 2);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   margin-bottom: 0;
 }
 
@@ -69,7 +80,10 @@
 .card-header {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
+<<<<<<< HEAD
   color: $card-cap-color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   background-color: $card-cap-bg;
   border-bottom: $card-border-width solid $card-border-color;
 
@@ -100,15 +114,26 @@
 //
 
 .card-header-tabs {
+<<<<<<< HEAD
   margin-right: -$card-spacer-x / 2;
   margin-bottom: -$card-spacer-y;
   margin-left: -$card-spacer-x / 2;
+=======
+  margin-right: -($card-spacer-x / 2);
+  margin-bottom: -$card-spacer-y;
+  margin-left: -($card-spacer-x / 2);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   border-bottom: 0;
 }
 
 .card-header-pills {
+<<<<<<< HEAD
   margin-right: -$card-spacer-x / 2;
   margin-left: -$card-spacer-x / 2;
+=======
+  margin-right: -($card-spacer-x / 2);
+  margin-left: -($card-spacer-x / 2);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 // Card image
@@ -196,35 +221,82 @@
 
       // Handle rounded corners
       @if $enable-rounded {
+<<<<<<< HEAD
         &:not(:last-child) {
+=======
+        &:first-child {
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
           @include border-right-radius(0);
 
           .card-img-top,
           .card-header {
+<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
             border-top-right-radius: 0;
           }
           .card-img-bottom,
           .card-footer {
+<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
             border-bottom-right-radius: 0;
           }
         }
 
+<<<<<<< HEAD
         &:not(:first-child) {
+=======
+        &:last-child {
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
           @include border-left-radius(0);
 
           .card-img-top,
           .card-header {
+<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
             border-top-left-radius: 0;
           }
           .card-img-bottom,
           .card-footer {
+<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
             border-bottom-left-radius: 0;
           }
         }
+=======
+            border-bottom-left-radius: 0;
+          }
+        }
+
+        &:only-child {
+          @include border-radius($card-border-radius);
+
+          .card-img-top,
+          .card-header {
+            @include border-top-radius($card-border-radius);
+          }
+          .card-img-bottom,
+          .card-footer {
+            @include border-bottom-radius($card-border-radius);
+          }
+        }
+
+        &:not(:first-child):not(:last-child):not(:only-child) {
+          @include border-radius(0);
+
+          .card-img-top,
+          .card-img-bottom,
+          .card-header,
+          .card-footer {
+            @include border-radius(0);
+          }
+        }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       }
     }
   }
@@ -259,6 +331,7 @@
 //
 
 .accordion {
+<<<<<<< HEAD
   > .card {
     overflow: hidden;
 
@@ -286,4 +359,27 @@
       margin-bottom: -$card-border-width;
     }
   }
+=======
+  .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 0;
+    border-radius: 0;
+  }
+
+  .card:not(:first-of-type) {
+    .card-header:first-child {
+      border-radius: 0;
+    }
+  }
+
+  .card:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .card:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }

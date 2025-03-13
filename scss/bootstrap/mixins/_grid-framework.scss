@@ -8,8 +8,14 @@
   %grid-column {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     padding-right: $gutter / 2;
     padding-left: $gutter / 2;
+=======
+    min-height: 1px; // Prevent columns from collapsing when empty
+    padding-right: ($gutter / 2);
+    padding-left: ($gutter / 2);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   }
 
   @each $breakpoint in map-keys($breakpoints) {
@@ -36,7 +42,11 @@
       .col#{$infix}-auto {
         flex: 0 0 auto;
         width: auto;
+<<<<<<< HEAD
         max-width: 100%; // Reset earlier grid tiers
+=======
+        max-width: none; // Reset earlier grid tiers
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       }
 
       @for $i from 1 through $columns {

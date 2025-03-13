@@ -4,8 +4,13 @@
 
 .table {
   width: 100%;
+<<<<<<< HEAD
   margin-bottom: $spacer;
   color: $table-color;
+=======
+  max-width: 100%;
+  margin-bottom: $spacer;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
   th,
@@ -23,6 +28,13 @@
   tbody + tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
   }
+<<<<<<< HEAD
+=======
+
+  .table {
+    background-color: $body-bg;
+  }
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 
@@ -53,7 +65,11 @@
   thead {
     th,
     td {
+<<<<<<< HEAD
       border-bottom-width: 2 * $table-border-width;
+=======
+      border-bottom-width: (2 * $table-border-width);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     }
   }
 }
@@ -85,7 +101,10 @@
 .table-hover {
   tbody tr {
     @include hover {
+<<<<<<< HEAD
       color: $table-hover-color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
       background-color: $table-hover-bg;
     }
   }
@@ -98,7 +117,11 @@
 // inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
+<<<<<<< HEAD
   @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
+=======
+  @include table-row-variant($color, theme-color-level($color, -9));
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 }
 
 @include table-row-variant(active, $table-active-bg);
@@ -150,7 +173,10 @@
   &.table-hover {
     tbody tr {
       @include hover {
+<<<<<<< HEAD
         color: $table-dark-hover-color;
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
         background-color: $table-dark-hover-bg;
       }
     }
@@ -174,6 +200,10 @@
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+<<<<<<< HEAD
+=======
+        -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
 
         // Prevent double border on horizontal scroll due to use of `display: block;`
         > .table-bordered {

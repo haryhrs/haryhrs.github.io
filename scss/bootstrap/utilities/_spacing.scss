@@ -8,6 +8,10 @@
 
     @each $prop, $abbrev in (margin: m, padding: p) {
       @each $size, $length in $spacers {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
         .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
         .#{$abbrev}t#{$infix}-#{$size},
         .#{$abbrev}y#{$infix}-#{$size} {
@@ -28,6 +32,7 @@
       }
     }
 
+<<<<<<< HEAD
     // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
     @each $size, $length in $spacers {
       @if $size != 0 {
@@ -51,6 +56,8 @@
       }
     }
 
+=======
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
     // Some special margin utils
     .m#{$infix}-auto { margin: auto !important; }
     .mt#{$infix}-auto,

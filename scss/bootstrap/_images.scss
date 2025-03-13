@@ -32,11 +32,19 @@
 }
 
 .figure-img {
+<<<<<<< HEAD
   margin-bottom: $spacer / 2;
+=======
+  margin-bottom: ($spacer / 2);
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   line-height: 1;
 }
 
 .figure-caption {
+<<<<<<< HEAD
   @include font-size($figure-caption-font-size);
+=======
+  font-size: $figure-caption-font-size;
+>>>>>>> 9ad1fc4ecd483bcf3c310ef9b4e75b4af0f18bdd
   color: $figure-caption-color;
 }
